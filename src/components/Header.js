@@ -1,6 +1,6 @@
 import { useState } from "react";
+import {Container, Row, Col} from 'reactstrap';
 import {
-    NavLink,
     Navbar,
     NavbarBrand,
     Collapse,
@@ -10,10 +10,12 @@ import {
     Dropdown,
     DropdownToggle,
     DropdownMenu,
+    DropdownItem,
 } from "reactstrap";
-
-import HygieiaFirnessLogo from "../app/assets/img/HygieiaFirness_logo.PNG";
+import { NavLink } from 'react-router-dom';
+import HygieiaFitnessLogo from "../app/assets/img/HygieiaFitness_logo.PNG";
 import "../App.css";
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +25,7 @@ const Header = () => {
         <Navbar sticky="top" expand="md" light>
         <NavbarBrand href="/" className="nav-links">
             <img
-            src={HygieiaFirnessLogo}
+            src={HygieiaFitnessLogo}
             alt="fitness logo"
             className="ms-5"
             width="100"
@@ -34,57 +36,80 @@ const Header = () => {
 
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
         <Collapse isOpen={menuOpen} navbar>
-            <Nav className="ms-auto nav-links" navbar>
-            <NavItem>
-                <NavLink className="nav-link" to="/">
-                Home
-                </NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="nav-link" to="/advice">
-                <Dropdown isOpen={dropdown} toggle={function noRefCheck() {}}>
-                    <DropdownToggle data-toggle="dropdown" onClick={() => dropdown ? setDropdown(false) : setDropdown(true)} tag="span" >
-                    Advice
-                    </DropdownToggle>
-                    <DropdownMenu>
-                    <NavLink to='/fitness' onClick={() => setDropdown(false)}>
-                        Fitness
-                    </NavLink>
-                    <NavLink to='/nutrition' onClick={() => setDropdown(false)}>
-                        Nutrition
-                    </NavLink>
-                    <NavLink to='/self-care' onClick={() => setDropdown(false)}>
-                        Self-care
-                    </NavLink>
-                    </DropdownMenu>
-                </Dropdown>
-                </NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="nav-link" to="/success">
-                Success
-                </NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="nav-link" to="/shop">
-                Shop
-                </NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="nav-link" to="/business">
-                Business
-                </NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="nav-link" to="/login">
-                Login
-                </NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="nav-link" to="/sign-up">
-                SIGN-UP
-                </NavLink>
-            </NavItem>
+            <Nav  className="ms-auto nav-links" navbar>
+                <Col>
+                    <NavItem>
+                        <NavLink  className="nav-link" to="/">
+                        Home
+                        </NavLink>
+                    </NavItem>
+                </Col>
+                <Col>
+                    <NavItem>
+                        <Dropdown isOpen={dropdown} toggle={function noRefCheck() {}}>
+                            <DropdownToggle
+                                className="headerFont"
+                                data-toggle="dropdown"
+                                onClick={() =>
+                                dropdown ? setDropdown(false) : setDropdown(true)
+                                }
+                                tag="span"
+                            >
+                                Advice
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem>
+                                    <NavLink className='nav-link' to="/fitness" onClick={() => setDropdown(false)}>
+                                        Fitness
+                                    </NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink className='nav-link' to="/nutrition" onClick={() => setDropdown(false)}>
+                                        Nutrition
+                                    </NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink className='nav-link' to="/self-care" onClick={() => setDropdown(false)}>
+                                        Self Care
+                                    </NavLink>
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </Dropdown>
+                    </NavItem>
+                </Col>
+                <Col>
+                    <NavItem>
+                        <NavLink className="nav-link" to="/success">
+                        Success
+                        </NavLink>
+                    </NavItem>
+                </Col>
+                <Col>
+                    <NavItem>
+                        <NavLink className="nav-link" to="/shop">
+                        Shop
+                        </NavLink>
+                    </NavItem>
+                </Col>
+                <Col>
+                    <NavItem>
+                        <NavLink className="nav-link" to="/business">
+                        Business
+                        </NavLink>
+                    </NavItem>
+                </Col>
+                <Col>
+                    <NavItem>
+                        <NavLink className="nav-link" to="/login">
+                        Login
+                        </NavLink>
+                    </NavItem>
+                </Col>
+                    <NavItem>
+                        <NavLink className="nav-link" to="/sign-up">
+                        Sign-up
+                        </NavLink>
+                    </NavItem>
             </Nav>
         </Collapse>
         </Navbar>
