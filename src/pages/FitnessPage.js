@@ -134,7 +134,7 @@ import {
                 day.
               </h4>
               <Col className="d-none d-lg-block">
-                <li> Set Small Fitness Goals</li>
+                <li>Set Small Fitness Goals</li>
                 <li>Write Out Your Workout Schedule to Meet Your Goals</li>
                 <li>Set Out Your Workout Clothes The Night Before</li>
                 <li>Put on Your Workout Clothes to Get in The Right Headspace</li>

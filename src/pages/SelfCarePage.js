@@ -22,7 +22,7 @@ const SelfCarePage = () => {
             </Row>
             <Row className="row-content align-items-center mb-5">
                 <Col className="col-sm-4 col-md-3">
-                    <h2 className="text-sm-right"> 4 TLife-Changing Tips to Combat Neck Pain</h2>
+                    <h2 className="text-sm-right"> 4 Life-Changing Tips to Combat Neck Pain</h2>
                 </Col>
                 <Col className='media'>
                     <div className="media-body align-self-center d-none d-lg-block">
@@ -30,7 +30,7 @@ const SelfCarePage = () => {
                         <ol className="d-none d-lg-block">
                             <li>Postural Awareness & Ergonomics</li>
                             <li>Tech Breaks & Sitting Breaks</li>
-                            <li>Change Positions Frequently </li>
+                            <li>Change Positions Frequently</li>
                             <li>Massage Therapy</li>
                         </ol>
                     </div>
@@ -44,7 +44,7 @@ const SelfCarePage = () => {
                 <Col className='media'>
                     <img id="fitnessImg" class="d-flex mr-3 img-thumbnail" src={img3} alt="Breadcrumb Trail thumbnail"/>
                     <div className="media-body align-self-center d-none d-lg-block">
-                        <h3>While decreasing the chance of experiencing burnout in the first place. </h3>
+                        <h3>While decreasing the chance of experiencing burnout in the first place.</h3>
                         <ol className="d-none d-lg-block">
                             <li>Go To Bed 30 Minutes Earlier</li>
                             <li>Eat Nutrient-Dense Foods</li>
@@ -56,7 +56,7 @@ const SelfCarePage = () => {
             </Row>
             <Row className="row-content align-items-center mb-5">
                 <Col className="col-sm-4 col-md-3">
-                    <h2 className="text-sm-right"> 4 Powerful Habits For Self-Love & Total Self-Acceptance</h2>
+                    <h2 className="text-sm-right">4 Powerful Habits For Self-Love & Total Self-Acceptance</h2>
                 </Col>
                 <Col className='media'>
                     <div className="media-body align-self-center d-none d-lg-block">
@@ -64,8 +64,8 @@ const SelfCarePage = () => {
                         <ol className="d-none d-lg-block">
                             <li>Treat Yourself</li>
                             <li>Nourish Your Body</li>
-                            <li> Get Yourself a Gift</li>
-                            <li> Sleep!</li>
+                            <li>Get Yourself a Gift</li>
+                            <li>Sleep!</li>
                         </ol>
                     </div>
                     <img id="fitnessImg" className="d-flex mr-3 img-thumbnail" src={img4} alt="Breadcrumb Trail thumbnail"/>

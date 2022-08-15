@@ -98,7 +98,7 @@ const ContactForm = () => {
                             as='select'
                             className='form-control'
                         >
-                            <option>By Phon</option>
+                            <option>By Phone</option>
                             <option>By Email</option>
                         </Field>
                     </Col>

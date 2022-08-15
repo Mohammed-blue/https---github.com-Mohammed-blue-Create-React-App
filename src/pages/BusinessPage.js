@@ -63,7 +63,7 @@ const BusinessPage = () => {
                     className='btn btn-link'
                     href="mailto:fakeemail@fakeemail.co"
                     >
-                        <i className='fa fa-envelope-o'>campsites@nucamp.co</i>
+                        <i className='fa fa-envelope-o'>hygieiafitness@gmail.com</i>
                     </a>
                 </Col>
             </Row>
